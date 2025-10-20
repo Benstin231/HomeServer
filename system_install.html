@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>安裝系統</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">安裝系統</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- 系統選擇 -->
+        <div class="row align-items-center">
+            <!-- 內文 -->
+            <div class="col-md-6">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">系統選擇</span>
+                </div>
+                <h5 class="pt-3">經過多次比較，最適合我同時安裝NAS及架設虛擬機的系統為「Proxmox」或「Unraid」或「TrueNas」。以下為三者的比較：</h5>
+                <ul>
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <h5><a href="https://www.proxmox.com/en/" target="_blank" class="text-info">Proxmox</a></h5>
+                            <li>虛擬機管理系統</li>
+                            <li>可同時運行多個VM</li>
+                            <li>開源免費</li>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><a href="https://unraid.net/" target="_blank" class="text-info">Unraid</a></h5>
+                            <li>NAS導向的作業系統</li>
+                            <li>簡單易用的介面</li>
+                            <li>需要付費</li>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><a href="https://www.truenas.com/truenas-scale/" target="_blank" class="text-info">TrueNas Scale</a></h5>
+                            <li>著名的NAS系統</li>
+                            <li>支援架設Kubernetes容器</li>
+                            <li>免費下載使用</li>
+                        </div>
+                    </div>
+                </ul>
+                <h5>考慮到我想要同時開多個虛擬機並安裝Docker容器，最後選擇<strong class="text-warning">「Proxmox」</strong>作為這台機器的作業系統</h5>
+                <h5>系統內再安裝<strong class="text-warning">TrueNas Scale</strong>作為儲存管理的平台；Debian虛擬機安裝<strong class="text-warning">Portainer</strong>(Docker管理套件)</h5>
+                
+                
+            </div>
+            <!-- 列表 -->
+            <div class="col-md-6">
+                <img src="./resources/image/new/OS_map.png" class="img-fluid rounded" width="100%" alt="照片無法顯示">
+            </div>
+        </div>
+
+        <!-- PROXMOX -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <!-- <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">Proxmox</span>
+                </div> -->
+                <img src="./resources/image/new/proxmox_logo.png" class="img-fluid rounded pb-3" width="80%" alt="照片無法顯示">
+                <h5 class="pt-3">Proxmox</h5>
+                <h5 class="pt-2">版本：<a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" target="_blank" class="text-info">Proxmox Virtual Environment 8.1.3</a></h5>
+                <p>Proxmox是基於Linux Debian架構開發的系統，支援 KVM (虛擬機)、LXC (容器) 兩種虛擬化技術，在儲存方面則支援 ZFS、Ceph 等多種主流檔案格式與協定
+                    <br>因為我對於Linux系統的指令操作有些基本瞭解，基礎的上手難度不算太高，且Proxmox的社群、論壇十分活躍，若中途遇到任何問題，都能輕鬆在網路上找到相關的解決辦法
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-center">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/IMG_1204.png" class="img-fluid rounded" width="80%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/Proxmox_UI.png" class="img-fluid rounded" width="100%" alt="照片無法顯示">
+                
+            </div>
+            
+        </div>
+
+        <!-- TrueNas Scale -->
+        <hr class="line" id="03">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <!-- <div style="max-width: 45%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">TrueNas Scale</span>
+                </div> -->
+                <img src="./resources/image/new/TrueNAS-Scale.png" class="img-fluid rounded pb-3" width="70%" alt="照片無法顯示">
+                <h5 class="pt-3">TrueNAS Scale</h5>
+                <h5 class="pt-2">版本：<a href="https://www.truenas.com/truenas-scale/" target="_blank" class="text-info">TrueNAS-SCALE-23.10.0.1</a></h5>
+                <p>TrueNAS Scale於2022年所發行，它的前身是TrueNAS Core（原FreeNAS），發行於2005年
+                    <br>舊版的TrueNAS Core是以FreeBSD為基礎，而TrueNAS Scale採用的則是Debian Linux作業系統，兩者檔案系統則皆採用OpenZFS。
+                </p>
+                <p><a href="https://www.netadmin.com.tw/netadmin/zh-tw/technology/03F0E36B934C4F9BAAFD0F8EACEE95CF" target="_blank" class="text-info">參考資料</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/SCALEInstallMainScreen.png" class="img-fluid rounded" width="80%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/TrueNas Scale_UI.png" class="img-fluid rounded" width="100%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+
+        <!-- Debian -->
+        <hr class="line" id="04">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/debian_logo_icon_168290.png" class="img-fluid rounded pb-3" width="70%" alt="照片無法顯示">
+                <h5>Debian</h5>
+                <h5 class="pt-2">版本：<a href="https://www.debian.org/News/2023/20231210" target="_blank" class="text-info">Debian 12.4.0</a></h5>
+                <p>伺服器對於介面化系統（GUI）的需求比較低，所以本次僅安裝Command Line Interface
+                    <br>利用Termius作為SSH連線的工具程式（如圖）
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/Debian_termius.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+        
+        <!-- Portainer -->
+        <hr class="line" id="05">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/portainer-wordmark-1.svg" class="img-fluid rounded pb-3" width="70%" alt="照片無法顯示">
+                <h5 class="pt-3">Portainer</h5>
+                <h5 class="pt-2">版本：<a href="https://docs.portainer.io/start/install-ce" target="_blank" class="text-info">Portainer Community Edition (CE)</a></h5>
+                <p>Portainer是一個易用且輕量化的Docker管理介面，透過Web界面的操作，更方便對於Docker指令不熟悉的使用者更快進入Docker的世界
+                    <br>基於Docker的特性，於Portainer中可以直接更新映像檔的版本，使用相同的設定，重新佈署並取代原來的Container即可完成升級，使用最新版本的功能
+                </p>
+                <p><a href="https://www.asustor.com/zh-tw/online/College_topic?topic=145" target="_blank" class="text-info">參考資料</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/portainer.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/Portainer_2.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                
+            </div>
+        <div class="p-3"></div>
+        </div>
+    
+        
+    
+    
+</body>
+</html>

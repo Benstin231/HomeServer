@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>搜集零件</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">搜集零件</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- 我的NAS方案 -->
+        <div class="row align-items-center">
+            <!-- 內文 -->
+            <div class="col-md-7">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">我的NAS方案</span>
+                </div>
+                <h5 class="pt-3">以下零件全部為「二手零件」</h5>
+                <ul>
+                    <div class="row pt-3">
+                        <div class="col-md-5">
+                            <li><h5>機殼：HP 800 G3 SFF（空機）</h5></li>
+                            <li><h5>CPU：Intel i5-7500T</h5></li>
+                            <li><h5>RAM：Samsung 16GB (x2)</h5></li>
+                            <li><h5>SSD：WD NVMe 512GB</h5></li>
+                            <li><h5>HDD：WD Gold 10TB (x2)</h5></li>
+                        </div>
+                        <div class="col-md-7">
+                            <li><h5>OS：Proxmox VE 8.1.3</h5></li>
+                            <li><h5>VM1：TrueNas Scale 23.10.1</h5></li>
+                            <li><h5>VM2：Debian 12.4.0</h5></li>
+                            <li><h5>Docker安裝於VM2</h5></li>
+                            <li><h5>使用Portainer管理Docker容器</h5></li>
+                        </div>
+                    </div>
+                </ul>
+                
+            </div>
+            <!-- 列表 -->
+            <div class="col-md-5">
+                <img src="./resources/image/new/IMG_1336.png" class="img-fluid rounded" width="80%" alt="照片無法顯示">
+            </div>
+        </div>
+
+        <!-- 機殼 -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-6 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">機殼</span>
+                </div>
+                <h5 class="pt-3">規格：<a href="https://support.hp.com/tw-zh/document/c05370909" target="_blank" class="text-info">HP EliteDesk 800 G3 SFF（空機）</a></h5>
+                <h5>入手價：699元</h5>
+                <p>HP 800 G3 SFF商用型主機<strong>「空機」</strong>（不含CPU,RAM,SSD,HDD）
+                    <br>賣家提供：機殼、主機板、電源供應器、CPU風扇、光碟機
+                    <br>此為特規主機板，與一般市售主機板大小不同；採用星型螺絲規格
+                    <br>支援intel第6代及第7代處理器；最高2400MT/s記憶體
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 align-items-start">
+                <img src="./resources/image/new/hp800g3sff.png" class="img-fluid rounded" width="70%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+
+        <!-- CPU -->
+        <hr class="line" id="03">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">CPU</span>
+                </div>
+                <h5 class="pt-3">規格：<a href="https://www.intel.com.tw/content/www/tw/zh/products/sku/97121/intel-core-i57500t-processor-6m-cache-up-to-3-30-ghz/specifications.html" target="_blank" class="text-info">i5-7500T</a></h5>
+                <h5>入手價：1570元</h5>
+                <p>Intel第七代i5處理器7500T（T代表「電力最佳化」版本，也就是低耗電版本）
+                    <br>低耗電版本雖然性能不比一般的版本高，但在電力消耗方面（可參考右圖TDP）明顯省電許多，適合作為迷你主機、NAS、伺服器的CPU選擇
+                </p>
+                <p><a href="https://www.cpubenchmark.net/compare/2910vs2917/Intel-i5-7500-vs-Intel-i5-7500T" target="_blank" class="text-info">按此查看CPU比較</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/cpu_compare.png" class="img-fluid rounded" width="50%" alt="照片無法顯示">
+                <img src="./resources/image/new/cpu.png" class="img-fluid rounded" width="35%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+
+        <!-- RAM -->
+        <hr class="line" id="04">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">RAM</span>
+                </div>
+                <h5 class="pt-3">規格：<a href="https://shp.ee/u3pjds6" target="_blank" class="text-info">Samsung 16gb 2rx8 pc4 2666v</a></h5>
+                <h5>入手價：單條775元（兩條1550）</h5>
+                <p>使用Samsung 16GB記憶體兩條，共32GB記憶體空間
+                    <br>購買時未注意到賣家標示2400,2666「雖機出貨」，幸好插上最高支援2400的主機板後仍然可以正常運作
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/IMG_1198.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+        
+        <!-- SSD -->
+        <hr class="line" id="05">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">SSD</span>
+                </div>
+                <h5 class="pt-3">規格：<a href="https://www.westerndigital.com/zh-tw/products/internal-drives/pc-sn730-ssd?sku=SDBPNTY-512G" target="_blank" class="text-info">WD SN730 512GB</a></h5>
+                <h5>入手價：700元</h5>
+                <p>雖然電腦組裝完成後，大部分的資料將存放在HDD裏面，但為了確保機器的擴充性，最後還是選擇了512GB的NVMe SSD作為系統碟
+                    <br>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/IMG_1352.JPG" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+        <div class="p-3"></div>
+        </div>
+
+        <!-- HDD -->
+        <hr class="line" id="06">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">HDD</span>
+                </div>
+                <h5 class="pt-3">規格：<a href="https://www.eclife.com.tw/SSD/moreinfo_120603.htm" target="_blank" class="text-info">WD101KRYZ</a> / <a href="https://www.eclife.com.tw/SSD/moreinfo_158217.htm" target="_blank" class="text-info">WD102KRYZ</a></h5>
+                <h5>入手價：3072元 / 4373元（共7515元）</h5>
+                <p>在尋找零件時，剛好在蝦皮上看到有賣家拍賣兩顆二手的7200轉10TB企業級硬碟，且使用時間不長、其中一顆還在保固期內，所以就馬上下單作為本次NAS的儲存硬碟
+                    <br>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/IMG_1353.jpg" class="img-fluid rounded" width="45%" alt="照片無法顯示">
+                <img src="./resources/image/new/IMG_1354.jpg" class="img-fluid rounded" width="45%" alt="照片無法顯示">
+            </div>
+        <div class="p-3"></div>
+        </div>
+    
+        
+    
+    
+</body>
+</html>

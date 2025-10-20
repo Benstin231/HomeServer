@@ -1,0 +1,108 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.nav {
+    background-color: #fffaeb;
+    border-bottom: 1px solid gray;
+    
+}
+
+/* 兩張主頁圖片 */
+.index_image {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.index_image_1 {
+    width: 45%;
+    padding-top: 50px;
+}
+
+/* 主頁按鈕 */
+.btn.btn-lg {
+    border: 2px solid var(--bs-white);
+    font-size: 150%;
+}
+
+/* 標題顏色 */
+h1,h2,h3,h4,h5,h6,li {
+    color: var(--bs-white);
+}
+
+/* 橫線顏色 */
+hr {
+    color: var(--bs-light);
+}
+
+/* 內文顏色 */
+p {
+    color: var(--bs-light);
+}
+
+/* 照片放大 */
+/* .img_zoom:hover {
+    width: 300%;
+} */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadein15 {
+    animation: fadein 2s;
+}
+
+.fadein30 {
+    animation: fadein 3s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.fadein40 {
+    animation: fadein 3s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+body {
+    padding-top: 50px;
+    background-color: var(--bs-gray-dark);
+}
+
+hr.line {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -50px;
+}

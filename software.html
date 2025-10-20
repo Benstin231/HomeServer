@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>軟體調教</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">軟體調教</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- CIFS -->
+        <div class="row align-items-center">
+            <!-- 內文 -->
+            <div class="col-md-5">
+                <div style="max-width: 40%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">CIFS</span>
+                </div>
+                <h5 class="pt-4">CIFS檔案系統</h5>
+                <p>CIFS 最初做為 Server Message Block (SMB) 檔案存取協定的延伸，由 Microsoft 於 20 世紀 90 年代中期發佈
+                    <br>利用TrueNas Scale開啟SMB Share功能並將部分空間（在此設定為路徑/mnt/proxshare）掛載於Debian虛擬機上，提供給Portainer（Docker）安裝容器並儲存資料
+                </p>
+                <p>編輯Debian系統上的/etc/fstab來啟用自動掛載功能（如圖）</p>
+                <p><a href="https://youtu.be/_sfddZHhOj4?t=2150" target="_blank" class="text-info">設定流程參考</a></p>
+            </div>
+            <!-- 照片 -->
+            <div class="col-md-7">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/cifs.png" class="img-fluid rounded" width="100%" alt="照片無法顯示">
+            </div>
+            <div class="p-3"></div>
+        </div>
+
+        <!-- Nextcloud -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/nextcloud-logo.png" class="img-fluid rounded" width="30%" alt="照片無法顯示">
+                <h5 class="pt-3"><a href="https://nextcloud.com/" target="_blank" class="text-info">Nextcloud</a></h5>
+                <p>Nextcloud 是一套用於建立網路硬碟服務的 Client-Server 架構的開源軟體，主要功能是建立及託管用戶的文件內容，具備企業等級的功能，官方也提供全面性的技術支援選項，作為自由、免費的開源軟體，任何人都可以在自己的私人網路主機上安裝並使用它完整的功能。</p>
+                <p>架設Nextcloud的過程中不停的遇到config.php無法寫入的問題。除此之外，第一次安裝完還需要調整多個設定曾能讓Nextcloud正常運行（尤其是cronjob）</p>
+                <p>終於，我成功為自己做了一個私人的雲端硬碟！Nextcloud甚至還有行事曆、聊天、照片等多項功能，實在好讚啊！</p>
+                <p><a href="https://blog.ossii.com.tw/?p=2290#" target="_blank" class="text-info">參考資料</a></p>
+                <p><a href="https://youtu.be/p0I8pikm2P4" target="_blank" class="text-info">Nextcloud設定參考</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/nextcloud_portainer.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/nextcloud_inferface.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+    
+    
+</body>
+</html>

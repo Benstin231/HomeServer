@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>NAS&HomeServer</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo -->
+    <div class="container-fluid p-5">
+        <div class="row justify-content-center p-5 align-items-center">
+            <img src="./resources/image/new/proxmox_logo.png" alt="照片無法顯示" class="index_image_1 fadein15">
+            <img src="./resources/image/new/TrueNAS-Scale.png" alt="照片無法顯示" class="index_image fadein15">
+        </div>
+        
+        <!-- 標題 -->
+        <div class="d-flex justify-content-center p-5">
+            <h1 class="display-5 text-white fadein30"><strong>自組NAS & HomeServer</strong></h1>
+        </div>
+
+        <!-- 按鈕 -->
+        <div class="container fadein40">
+            <div class="p-3 row justify-content-center align-items-center text-nowrap">
+                <div class="col-12 col-md-4 col-lg-2 offset-md-1"><a href="./reference.html" class="p-3 btn btn-lg btn-outline-light">參考資料</a></div>
+                <div class="col-12 col-md-4 col-lg-2"><a class="p-3 btn btn-lg btn-outline-light" href="./computer_parts.html">搜集零件</a></div>
+                <div class="col-12 col-md-4 col-lg-2"><a class="p-3 btn btn-lg btn-outline-light" href="./build.html">組裝問題</a></div>
+                <div class="col-12 col-md-4 col-lg-2"><a class="p-3 btn btn-lg btn-outline-light" href="./system_install.html">安裝系統</a></div>
+                <div class="col-12 col-md-4 col-lg-3"><a class="p-3 btn btn-lg btn-outline-light" href="./network.html">網路設定</a></div>
+            </div>
+        </div>
+        <div class="container fadein40">
+            <div class="p-3 row justify-content-center align-items-center text-nowrap">
+                <div class="col-12 col-md-4 col-lg-2"><a href="./software.html" class="p-3 btn btn-lg btn-outline-light">軟體調教</a></div>
+                <div class="col-12 col-md-4 col-lg-2"><a class="p-3 btn btn-lg btn-outline-light" href="./analyze.html">網站製作分析</a></div>
+            </div>
+        </div>
+
+        <div class="p-2"></div>
+        <hr>
+        <div class="p-3"></div>
+        <!-- 輪播 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div id="carouselExampleIndicators" class="carousel slide col-md-8" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./resources/image/new/IMG_1336.png" class="d-block w-100 rounded" alt="無法顯示照片">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./resources/image/new/IMG_1337.png" class="d-block w-100 rounded" alt="無法顯示照片">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./resources/image/new/IMG_1347.png" class="d-block w-100 rounded" alt="無法顯示照片">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="col-md-2"></div>
+        </div>
+    
+        </div>
+        
+    
+
+    
+    
+</body>
+</html>

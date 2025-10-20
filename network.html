@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>網路設定</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">網路設定</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- 請求路徑圖 -->
+        <div class="row align-items-center">
+            <!-- 內文 -->
+            <div class="col-md-5">
+                <div style="max-width: 40%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">請求路徑圖</span>
+                </div>
+                <h5 class="pt-4">使用者對於本機伺服器的請求路徑圖</h5>
+                <h5>服務：<a href="https://www.cloudflare.com/zh-tw/products/tunnel/" target="_blank" class="text-info">Cloudflare Tunnel</a> + <a href="https://nginxproxymanager.com/" target="_blank" class="text-info">Nginx Proxy Manager</a></h5>
+                <p>我已經於Cloudflare購買網域名「benstin.net」，只要使用Cloudflare提供的Zero Trust功能（Cloudflare Tunnel）加上本地的Nginx Proxy Manager，就能輕鬆地使用<strong class="text-warning">安全且加密</strong>的管道讓外網的使用者連線進入伺服器
+                    <br>
+                </p>
+                <p><a href="https://claudiu.psychlab.eu/post/homelab-4-install-and-configure-nginx-proxy-manager-with-ssl-wildcard-certs/" target="_blank" class="text-info">參考圖片來源</a>（圖片非實際使用的Docker容器）</p>
+            </div>
+            <div class="col-md-1"></div>
+            <!-- 照片 -->
+            <div class="col-md-6">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/cloudflare_tunnel_docker.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            <div class="p-3"></div>
+        </div>
+
+        <!-- Cloudflare Tunnel -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/Cloudflare_Logo.png" class="img-fluid rounded" width="30%" alt="照片無法顯示">
+                <h5><a href="https://www.cloudflare.com/zh-tw/products/tunnel/" target="_blank" class="text-info">Cloudflar Tunnel</a></h5>
+                <p>Cloudflare是互聯網上運行的最大網路之一，主要業務為提供基於反向代理的內容傳遞網路（Content Delivery Network, CDN）及分佈式域名解析服務（Distributed Domain Name Server）</p>
+                <p>利用Cloudflare Tunnel可以快速安全地加密應用程式到任何類型基礎結構的流量，<strong class="text-warning">隱藏web伺服器IP地址</strong>，阻止直接攻擊，而且無需打開任何公共入站埠</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/cloudflare_tunnel.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <img src="./resources/image/new/cloudflare_benstin.net.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        
+        <!-- Nginx Proxy Manager -->
+        <hr class="line" id="03">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/nginx_proxy_manager_logo.png" class="img-fluid rounded" width="30%" alt="照片無法顯示">
+                <div class="p-2"></div>
+                <h5 class="pt-2"><a href="https://nginxproxymanager.com/" target="_blank" class="text-info">Nginx Proxy Manager</a></h5>
+                <p>對於部分服務，我選擇使用Nginx Proxy Manager作為<strong class="text-warning">反向DNS</strong>的工具
+                    <br>Nginx Proxy Manager擁有簡單易用的WebUI控制面板，對於新手非常友善
+                    <br>除此之外，他還提供了<a href="https://letsencrypt.org/zh-tw/" target="_blank" class="text-info">Let’s Encrypt</a>這個免費的SSL/TLS功能可以快速註冊及使用，替網頁加密
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/npm_ssl.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+
+        <!-- Tailscale -->
+        <hr class="line" id="04">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <img src="./resources/image/new/tailscale.png" class="img-fluid rounded" width="50%" alt="照片無法顯示">
+                <div class="p-1"></div>
+                <h5 class="pt-3"><a href="https://tailscale.com/" target="_blank" class="text-info">Tailscale</a></h5>
+                <p>Tailscale是一款基於<a href="https://www.wireguard.com/" target="_blank" class="text-info">WireGuard</a>技術開發的<strong class="text-warning">虛擬區域網路</strong>（virtual LAN）<strong class="text-warning">VPN</strong>軟體，可將多個裝置組成虛擬內網，方便互相連線，存取共享資源</p>
+                <p>我在系統上安裝了Tailscale工具程式作為我的私人VPN服務，方變我出門在外時可以遠端連入家中的區域網並調整伺服器的設定</p>
+                <p><a href="https://mintisan.github.io/post/tailscale-simple-vpn/" target="_blank" class="text-info">圖片來源</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/tailscale-simple-vpn.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+            
+        </div>
+        <div class="p-3"></div>
+    
+    
+</body>
+</html>

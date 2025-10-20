@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>網站製作分析</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">網頁製作分析</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- Apple -->
+        <div class="row align-items-center">
+            <!-- 標題 -->
+            <div class="pt-5 col-md-5">
+                <div style="max-width: 55%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">推薦網站：Apple</span>
+                </div>
+            </div>
+            <!-- 影片 -->
+            <!-- <div class="ratio ratio-16x9 embed-responsive embed-responsive-16by9">
+                <iframe src="./resources/video/iphone15pro.mov" class="embed-responsive-item" width="90%"></iframe>
+            </div> -->
+            <video class="pt-3" src="./resources/video/iphone15pro.mp4" autoplay loop muted width="90%"></video>
+
+            <div class="p-3"></div>
+        </div>
+
+        <!-- 內文 -->
+        <div class="row align-items-center">
+            <div class="pt-3 col-md-5">
+                <img src="./resources/image/new/Apple-logo.png" class="img-fluid rounded" width="20%" alt="照片無法顯示">
+                <div class="p-3"></div>
+                <h3><a href="https://www.apple.com/tw/iphone-15-pro/" target="_blank" class="text-info">Apple.com</a></h3>
+                <ul>
+                    <li>
+                        <h3 class="pt-3">推薦原因：</h3>
+                        <p>多年前第一次看到蘋果的官網時，我對於他們設計的網頁動畫和滾動頁面時出現的效果感到非常震驚：原來網頁也可以達到像是影片一樣的動畫效果！</p>
+                        <p>除了商品動畫之外，他們對於內容的呈現也非常<strong class="text-warning">「簡潔」</strong>、<strong class="text-warning">「清楚」</strong>
+                            <br>從網頁最上方的導覽列、商品介紹頁面到結帳畫面，蘋果採用了一致的設計風格，<strong class="text-warning">「大尺寸圖文」</strong>是他們喜歡的呈現方式
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="pt-3">優點：</h3>
+                        <p>網頁可以清楚帶領消費者了解商品的特色並完成購買</p>
+                        <p>網頁動畫或酷炫的效果可以讓消費者對於商品的好感度增加</p>
+                    </li>
+                    <li>
+                        <h3 class="pt-3">缺點：</h3>
+                        <p>大尺寸的圖文導致無法一眼看清所有內容（網頁長）</p>
+                        <p>商品幾乎全部為電腦動畫，沒有實拍畫面</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="pt-3 col-md-6">
+                <video src="./resources/video/apple_navbar.mp4" autoplay loop muted width="90%"></video>
+                <div class="p-2"></div>
+                <img src="./resources/image/new/apple_website_2.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                <div class="p-2"></div>
+                <img src="./resources/image/new/applewatch.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+        </div>
+        <div class="p-3"></div>
+
+        <!-- 作業內容分析 -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 50%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">作業內容分析</span>
+                </div>
+                <div class="p-2"></div>
+                <ul class="pt-2">
+                    <li>
+                        <h3>主題挑選：</h3>
+                        <p>本次選定自組NAS及HomeServer為主題是因為最近剛組好此機器不久，藉由這次網頁設計的功課呈現自己從找資料到組裝完成中間的經歷</p>
+                    </li>
+                    <li>
+                        <h3 class="pt-2">網頁架構：</h3>
+                        <p>我認為好的網頁不一定需要花俏的功能或是動畫，而是需要有邏輯且清楚的排版</p>
+                        <p>所以在本次作業的網頁風格上，我選用<strong class="text-warning">灰黑色</strong>作為主題，並以<strong class="text-warning">多張實際拍攝的紀錄照片</strong>呈現不同分類內容</p>
+                    </li>
+                    <li>
+                        <h3 class="pt-2">心得：</h3>
+                        <p>一開始我自己比較擔心的部分是二手硬體的挑選及組裝，畢竟之前沒有對於電腦硬體做深入研究，沒想到組裝過程比想像中順利許多。相反的，我在軟體、系統方面花費了較多的心力及時間，例如：我在設定TrueNas Scale, Cifs, Docker上來回折騰了超過10次以上</p>
+                        <p>對於現在網際網路發達的時代，許多線上的服務已經是生活中不可或缺的要素之一，如：每天看影片的Youtube平台、傳訊息用的Line等等，而對於大多數人而言，我們只是個享受服務的使用者
+                            <br>但是，今天我站在前人的肩膀上（畢竟這些硬體和系統也不是我開發的，我只能保守的說自己參與了「一部分」）<strong class="text-warning">體會到了架設平台服務的辛苦</strong>。機器部署、環境架設、網路設定，甚至是近期越來越被重視的資安防護環環相扣。
+                        </p>
+                        <p>也許有些想問：為什麼我不選擇像是AWS的雲端主機服務就好？他擁有輕鬆部署的優點，還能輕鬆升級硬體配備，不需要處理麻煩的網路設定...
+                            <br>那是因為，我喜歡挑戰並自己研究這些科技產品，<strong class="text-warning">從摸索過程中學習知識</strong>（如：硬體規格、網路協議），一舉數得
+                        </p>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <video src="./resources/video/mywebsite.mp4" autoplay loop muted width="90%"></video>
+                <div class="p-4"></div>
+                <img src="./resources/image/new/IMG_1337.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+                <div class="p-4"></div>
+                <img src="./resources/image/new/IMG_1336.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+    
+</body>
+</html>

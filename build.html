@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>組裝問題</title>
+</head>
+<body id="index_body">
+    <!-- 導覽列 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top border-bottom" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">自組NAS&HomeServer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav me-auto">
+                    <!-- 主頁 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./index.html">主頁</a>
+                    </li>
+                    <!-- 參考資料 -->
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="./reference.html">參考資料</a>
+                    </li>
+                    <!-- 搜集零件 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">搜集零件</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./computer_parts.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./computer_parts.html#01">我的NAS方案</a>
+                            <a class="dropdown-item" href="./computer_parts.html#02">機殼</a>
+                            <a class="dropdown-item" href="./computer_parts.html#03">CPU</a>
+                            <a class="dropdown-item" href="./computer_parts.html#04">RAM</a>
+                            <a class="dropdown-item" href="./computer_parts.html#05">SSD</a>
+                            <a class="dropdown-item" href="./computer_parts.html#06">HDD</a>
+                        </div>
+                    </li>
+                    <!-- 組裝問題 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">組裝問題</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./build.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./build.html#01">CPU風扇</a>
+                            <a class="dropdown-item" href="./build.html#02">散熱膏</a>
+                            <a class="dropdown-item" href="./build.html#03">HDD硬碟架</a>
+                            <a class="dropdown-item" href="./build.html#04">RAM</a>
+                        </div>
+                    </li>
+                    <!-- 安裝系統 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">安裝系統</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./system_install.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./system_install.html#01">系統選擇</a>
+                            <a class="dropdown-item" href="./system_install.html#02">Proxmox</a>
+                            <a class="dropdown-item" href="./system_install.html#03">Truenas Scale</a>
+                            <a class="dropdown-item" href="./system_install.html#04">Debian</a>
+                            <a class="dropdown-item" href="./system_install.html#05">Portainer</a>
+                        </div>
+                    </li>
+                    <!-- 網路設定 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網路設定</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./network.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./network.html#01">請求路徑圖</a>
+                            <a class="dropdown-item" href="./network.html#02">Cloudflare Tunnel</a>
+                            <a class="dropdown-item" href="./network.html#03">Nginx Proxy Manager</a>
+                            <a class="dropdown-item" href="./network.html#04">Tailscale</a>
+                        </div>
+                    </li>
+                    <!-- 軟體調教 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">軟體調教</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./software.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./software.html#01">CIFS</a>
+                            <a class="dropdown-item" href="./software.html#02">Nextcloud</a>
+                        </div>
+                    </li>
+                    <!-- 網站製作分析 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">網站製作分析</a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="./analyze.html">查看全部</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./analyze.html#01">推薦網站</a>
+                            <a class="dropdown-item" href="./analyze.html#02">作業內容分析</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container fadein15">
+        <h1 class="text-center mt-5">組裝問題</h1>
+        <hr class="line" id="01">
+        <hr>
+        <!-- CPU -->
+        <div class="row align-items-center">
+            <!-- 內文 -->
+            <div class="col-md-5">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">CPU風扇</span>
+                </div>
+                <h5 class="pt-3">清理CPU風扇並安裝新的CPU</h5>
+                <h5>二手零件（空機）因為存放時間較久，灰塵較多</h5>
+                <p>遇到問題：此商用特規機器使用星型螺絲固定CPU風扇
+                    <br>解決辦法：特地至光華商場附近的電子零件店購買螺絲起子組
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <!-- 照片 -->
+            <div class="col-md-6">
+                <img src="./resources/image/new/IMG_1196.png" class="img-fluid rounded" width="50%" alt="照片無法顯示">
+                <img src="./resources/image/new/IMG_1195.png" class="img-fluid rounded" width="49%" alt="照片無法顯示">
+            </div>
+        </div>
+
+        <!-- 散熱膏 -->
+        <hr class="line" id="02">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">散熱膏</span>
+                </div>
+                <h5 class="pt-3">搜集零件時未考慮到散熱膏的需求</h5>
+                <h5>幸好手邊剛好有之前組裝PC時多餘的散熱膏可以拿來使用</h5>
+                <p>散熱膏：<a href="https://www.thermalright.com/tw/product/tf7-2g/" target="_blank" class="text-info">Thermalright TF7 12.8 W/Mk</a></p>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-4 align-items-start">
+                <img src="./resources/image/new/thermalright_tf7.png" class="img-fluid rounded" width="80%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        
+        <!-- HDD硬碟架 -->
+        <hr class="line" id="03">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-6 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">HDD硬碟架</span>
+                </div>
+                <h5 class="pt-3">本機配備兩個3.5吋硬碟架</h5>
+                <h5>與一般桌機不同，本機使用特殊螺絲卡榫的方式固定</h5>
+                <p>遇到問題：手邊沒有HP特殊的硬碟固定螺絲
+                    <br>解決辦法：重新向販售空機的賣家購買兩組（100元）
+                </p>
+                <p><a href="https://shp.ee/incrz73" target="_blank" class="text-info">點此查看HP特規硬碟螺絲</a></p>
+            </div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/IMG_1197.png" class="img-fluid rounded" width="55%" alt="照片無法顯示">
+                <img src="./resources/image/new/IMG_1351.png" class="img-fluid rounded" width="40%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+
+        <!-- RAM -->
+        <hr class="line" id="04">
+        <hr class="p-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+                <div style="max-width: 30%;" class="p-1 bg-secondary rounded text-center">
+                    <span class="h2 text-white">RAM</span>
+                </div>
+                <h5 class="pt-3">主機板最高支援2400MT/s的記憶體</h5>
+                <h5>未注意而買到2666的記憶體（賣家隨機出貨）</h5>
+                <p>上網搜尋資料發現2666的記憶體仍然可以安裝在支援2400的主機板上，系統會自動將記憶體降頻
+                    <br>還有一種說法是「將2666的記憶體安裝在2400的主機板運行效率更好」，這點我因為沒有特別測試所以沒有一個準確的答案
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-items-start">
+                <img src="./resources/image/new/IMG_1198.png" class="img-fluid rounded" width="90%" alt="照片無法顯示">
+            </div>
+            
+        </div>
+        <div class="p-3"></div>
+    
+        
+    
+    
+</body>
+</html>

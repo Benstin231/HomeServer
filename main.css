@@ -33,19 +33,42 @@
 
 /* 兩張主頁圖片 */
 .index_image {
-    width: 40%;
-    padding-top: 50px;
+    width: 100%;
+    max-width: 300px;
+    padding-top: 20px;
 }
 
 .index_image_1 {
-    width: 45%;
-    padding-top: 50px;
+    width: 100%;
+    max-width: 350px;
+    padding-top: 20px;
 }
 
 /* 主頁按鈕 */
 .btn.btn-lg {
     border: 2px solid var(--bs-white);
-    font-size: 150%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* 平板和桌面尺寸的按鈕調整 */
+@media (min-width: 768px) {
+    .btn.btn-lg {
+        font-size: 1.5rem;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .index_image {
+        max-width: 400px;
+        padding-top: 50px;
+    }
+
+    .index_image_1 {
+        max-width: 450px;
+        padding-top: 50px;
+    }
 }
 
 /* 標題顏色 */
@@ -98,6 +121,31 @@ p {
 body {
     padding-top: 50px;
     background-color: var(--bs-gray-dark);
+}
+
+/* 響應式 padding 調整 */
+@media (max-width: 767px) {
+    .container-fluid.p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .p-5 {
+        padding: 1rem !important;
+    }
+
+    .p-3 {
+        padding: 0.5rem !important;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+}
+
+/* 確保圖片不超出容器 */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 hr.line {
